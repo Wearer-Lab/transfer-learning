@@ -1,0 +1,62 @@
+[project]
+name = "transfer-learning"
+version = "0.1.0"
+description = "A video processing pipeline for generating step-by-step guides from videos"
+authors = [
+    {name = "Wearer Lab", email = "dev@wearer.xyz"}
+]
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.7.0",
+    "opencv-python>=4.8.0",
+    "yt-dlp>=2023.12.30",
+    "openai>=1.12.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.6.1",
+    "pydantic-settings>=2.1.0",
+    "psutil>=5.9.0",
+    "moviepy>=2.0.0",
+    "whisper>=1.1.10",
+    "faster-whisper>=0.10.0",
+    "langchain>=0.1.0",
+    "langchain-core>=0.1.0"
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.urls]
+Homepage = "https://github.com/Wearer-Lab/Transfert-Learning"
+Repository = "https://github.com/Wearer-Lab/Transfert-Learning.git"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[project.scripts]
+transfer-learning = "transfer_learning.cli:app"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+select = ["E", "F", "B", "I"]
+ignore = ["E501"]
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=transfer_learning"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.1.0",
+    "black>=23.10.0",
+] 
