@@ -193,4 +193,4 @@ transfer-learning/
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the Eclipse Public License - v 2.0 - see the LICENSE file for details. 
