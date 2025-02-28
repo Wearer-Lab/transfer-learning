@@ -26,8 +26,8 @@ readme = "README.md"
 license = {text = "Eclipse Public License - v 2.0"}
 
 [project.urls]
-Homepage = "https://github.com/Wearer-Lab/Transfert-Learning"
-Repository = "https://github.com/Wearer-Lab/Transfert-Learning.git"
+Homepage = "https://github.com/Wearer-Lab/transfer-learning"
+Repository = "https://github.com/Wearer-Lab/transfer-learning.git"
 
 [build-system]
 requires = ["hatchling"]

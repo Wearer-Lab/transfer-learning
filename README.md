@@ -17,8 +17,8 @@ A powerful CLI tool for processing videos and generating step-by-step guides usi
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Wearer-Lab/Transfert-Learning.git
-cd Transfert-Learning
+git clone https://github.com/Wearer-Lab/transfer-learning.git
+cd transfer-learning
 ```
 
 2. Create a virtual environment and install dependencies using UV:
